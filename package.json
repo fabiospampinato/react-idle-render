@@ -1,0 +1,43 @@
+{
+  "name": "react-idle-render",
+  "description": "React component to render a subtree only when the browser is idle.",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist",
+    "compile": "tsc --skipLibCheck && tstei",
+    "compile:watch": "tsc --skipLibCheck --watch",
+    "prepublishOnly": "npm run clean && npm run compile"
+  },
+  "bugs": {
+    "url": "https://github.com/fabiospampinato/react-idle-render/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Fabio Spampinato",
+    "email": "spampinabio@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabiospampinato/react-idle-render.git"
+  },
+  "keywords": [
+    "react",
+    "idle",
+    "render",
+    "performance"
+  ],
+  "dependencies": {
+    "@types/react": "^16.8.16"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "react": "^16.8.6",
+    "rimraf": "^2.6.0",
+    "typescript": "^3.0.3",
+    "typescript-transform-export-interop": "^1.0.0"
+  }
+}
